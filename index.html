@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD - Streetwear Moderno</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CSD</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active" data-section="home">Home</a></li>
+            <li><a href="#tienda" data-section="tienda">Tienda</a></li>
+            <li><a href="#carrito" data-section="carrito"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home" class="section active">
+            <div class="hero">
+                <h1>CSD</h1>
+                <p class="tagline">"Menos reglas, más estilo"</p>
+            </div>
+        </section>
+
+        <section id="tienda" class="section">
+            <div class="store-header">
+                <h2>Nuestra Tienda</h2>
+                <div class="store-filters">
+                    <select id="categoria-filter">
+                        <option value="todos">Todas las categorías</option>
+                        <option value="hoodies">Hoodies</option>
+                        <option value="camisetas">Camisetas</option>
+                        <option value="pantalones">Pantalones</option>
+                        <option value="shorts">Shorts</option>
+                        <option value="jerseys">Jerseys</option>
+                    </select>
+                    <select id="ordenar-por">
+                        <option value="precio-asc">Precio: Menor a Mayor</option>
+                        <option value="precio-desc">Precio: Mayor a Menor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="product-grid">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+
+        <section id="carrito" class="section">
+            <div class="cart-container">
+                <h2>Tu Carrito</h2>
+                <div class="cart-items">
+                    <!-- Los items del carrito se cargarán dinámicamente -->
+                </div>
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Total:</span>
+                        <span class="total-amount">$0.00</span>
+                    </div>
+                    <button class="checkout-btn">Proceder al pago</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CSD. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
